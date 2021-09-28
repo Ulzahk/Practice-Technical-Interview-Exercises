@@ -16,7 +16,9 @@ const wordsCounter = text => {
       DICTIONARY[formatedWord] = 1;
     }
   });
-  console.log("DICTIONARY", DICTIONARY);
-  console.log("Total Times Word To: ", DICTIONARY.to);
+  return console.log({
+    DICTIONARY: DICTIONARY,
+    "Total Times Word To: ": DICTIONARY.to
+  })
 };
 wordsCounter(TEXT);
