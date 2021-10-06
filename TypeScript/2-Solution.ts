@@ -3,8 +3,8 @@ for (let index = 0; index < 10000; index++) {
   INTEGERS_ARRAY.push(index + 1)
 };
 
-const primeNumberFinder = array => {
-  const primeNumbersArray = array.map(number => {
+const primeNumberFinder = (array: number[]) => {
+  const primeNumbersArray = array.map((number: number) => {
     if(number === 1){
       return undefined;
     }
