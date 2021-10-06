@@ -19,9 +19,13 @@ const primeNumberFinder = array => {
     return number;
   })
   .filter(number => number !== undefined);
-  return console.log({
-    primeNumbersArray
-  });
+
+  // console.log(primeNumbersArray)
+  return primeNumbersArray;
 };
 
 primeNumberFinder(INTEGERS_ARRAY);
+
+module.exports = {
+  primeNumberFinder
+}
