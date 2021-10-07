@@ -23,10 +23,18 @@ const getCurrentDateWithFormat = () => {
   if(seconds < 10){
     seconds = `0${seconds}`
   }
-  return console.log(`
+  // console.log(`
+  //   Today Is: ${WEEKDAY_DICTIONARY[date.getDay()]}.
+  //   Current time is : ${hours} ${meridiem} : ${minutes} : ${seconds}
+  // `)
+  return `
     Today Is: ${WEEKDAY_DICTIONARY[date.getDay()]}.
     Current time is : ${hours} ${meridiem} : ${minutes} : ${seconds}
-  `)
+  `;
 };
 
 getCurrentDateWithFormat();
+
+module.exports = {
+  getCurrentDateWithFormat,
+}
