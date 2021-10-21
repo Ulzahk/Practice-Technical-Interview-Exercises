@@ -21,19 +21,27 @@ const leapYearExaminator = year => {
   if(year % 4 === 0){
     if(year % 100 === 0){
       if(year % 400 === 0){
-        return console.log(`${year} is a leap year `);
+        console.log(`${year} is a leap year`);
+        return `${year} is a leap year`;
       }
       if(year % 400 !== 0){
-        return console.log(`${year} isn't a leap year `);
+        console.log(`${year} isn't a leap year`);
+        return `${year} isn't a leap year`;
       }
     }
-    return console.log(`${year} is a leap year `);
+    console.log(`${year} is a leap year`);
+    return `${year} is a leap year`;
   }
   if(year % 4 !== 0){
-    return console.log(`${year} isn't a leap year `);
+    console.log(`${year} isn't a leap year`);
+    return `${year} isn't a leap year`;
   }
 }
 
 yearsList.forEach(year => {
   leapYearExaminator(year);
-})
+});
+
+module.exports = {
+  leapYearExaminator
+};
