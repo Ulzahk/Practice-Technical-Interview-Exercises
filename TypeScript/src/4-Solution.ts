@@ -17,7 +17,7 @@ const yearsList: number[] = [
   18000,
 ];
 
-const leapYearExaminator = (year: number)=> {
+const leapYearExaminator = (year: number) => {
   if(year % 4 === 0){
     if(year % 100 === 0){
       if(year % 400 === 0){
