@@ -6,7 +6,7 @@ const routeGenerator = title => {
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[¿?|¡!"#$%&/()=]+/g, "");
-  console.log(route);
+  // console.log(route);
   return route;
 };
 routeGenerator(title);
