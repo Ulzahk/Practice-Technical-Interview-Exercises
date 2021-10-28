@@ -16,9 +16,12 @@ const wordsCounterTS = (text: string) => {
       DICTIONARY[formatedWord] = 1;
     }
   });
-  return console.log({
+  const response = {
     DICTIONARY: DICTIONARY,
     "Total Times Word To: ": DICTIONARY.to
-  })
+  };
+  return response;
 };
 wordsCounterTS(TEXTTS);
+
+export default wordsCounterTS;
